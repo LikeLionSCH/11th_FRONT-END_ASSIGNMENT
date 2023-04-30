@@ -1,0 +1,49 @@
+body
+{
+    background-color:rgb( 89, 103, 120);
+    text-align: center;
+}
+
+.login-box
+{
+    margin: auto;
+    height: 300px;
+    width:250px;
+    background-color: rgb(255,255,255);
+    border-top: 8px rgb(193,222,126) solid;
+    border-radius: 2%;
+
+}
+
+.login-header
+{
+    font-size: 30px;
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    background-color: rgb(247, 247, 247);
+    height: 50px;
+}
+
+.item
+{
+    margin-bottom: 20px;
+}
+
+#ID, #PW
+{
+    width: 200px;
+    height: 30px;
+    border-color: antiquewhite;
+}
+
+#LOGIN, #SIGNUP
+{
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: rgb(240, 119, 108);
+    border-radius: 5%;
+    border-color: rgb(240, 119, 108);
+}
