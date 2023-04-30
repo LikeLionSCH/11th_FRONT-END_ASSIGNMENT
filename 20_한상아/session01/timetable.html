@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 1학기 시간표</title>
+    <style>
+        table {
+            border: 2px solid #d2d2d2;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+
+        th,
+        td {
+            border: 1px solid #d2d2d2;
+            border-collapse: collapse;
+        }
+
+        th {
+            height: 5px;
+        }
+
+        td {
+            width: 95px;
+            height: 30px;
+        }
+
+        .date {
+            color: #565656;
+        }
+
+        .time {
+            color: #565656;
+            height: 60px;
+            width: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="500" height="600" style="color: #ffffff">
+        <p style="color: rgb(192, 12, 12); font-size: 13px; line-height: 5px;">2023년 1학기</p>
+        <p style="font-size: 20px; line-height: 2px; font-weight: bold;">시간표</p>
+        <tr width="19%">
+            <th></th>
+            <th class="date">월</th>
+            <th class="date">화</th>
+            <th class="date">수</th>
+            <th class="date">목</th>
+            <th class="date">금</th>
+        </tr>
+        <tr>
+            <th class="time">9</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="time" rowspan="2">10</th>
+            <td rowspan="3" style="background-color: #f08676" valign="top">인간과 미래<p>RC208</p>
+            <td rowspan="3" style="background-color: #7aa5e9" valign="top">전공영어기초<p>ML417</p>
+            <td rowspan="2"></td>
+            <td></td>
+            <td rowspan="2"></td>
+
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: #9e86e1;" valign="top">IoT플랫폼<p>ML416</p>
+            </td>
+        </tr>
+        <tr>
+            <th class="time">11</th>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="time">12</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="time" rowspan="2">1</th>
+            <td rowspan="3" style="background-color: #ecc369;" valign="top">아동발달과교육<p>6126</p>
+            </td>
+            <td></td>
+            <td rowspan="3" style="background: #a7c970;" valign="top">일본문화의이해<p>6129</p>
+            </td>
+            <td></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: #77ca88;" valign="top">운영체제<p>ML416</p>
+            </td>
+            <td rowspan="2" style="background-color: #fbaa67;" valign="top">컴퓨터네트워크<p>ML518</p>
+            </td>
+        </tr>
+        <tr>
+            <th class="time">2</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="time">3</th>
+            <td></td>
+            <td rowspan="2" style="background-color: #fbaa67;" valign="top">컴퓨터네트워크<p>ML518</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th class="time" rowspan="2">4</th>
+            <td></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: #a7c970;" valign="top">운영체제<p>ML416</p>
+            </td>
+            <td rowspan="2" style="background-color: #9e86e1;" valign="top">IoT플랫폼<p>ML416</p>
+            </td>
+        </tr>
+        <tr>
+            <th class="time">5</th>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+정확히 토요일까지 타임리프 통신이용해서 백에서 가능하면백에서
+프론트로 변수 이름같은거 보내서
+프로늗에서 이름을 받아서 동적으로 이름 띄우기...
