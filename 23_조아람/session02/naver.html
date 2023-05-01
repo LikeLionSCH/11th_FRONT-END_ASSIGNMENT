@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>네이버 회원가입</title>
+    <link href="https://fonts.googleapis.com/earlyaccess.notosanskr.css" rel="stylesheet">
+    <link rel="stylesheet" href="naver.css">
+<body>
+    <p class="sign">회원가입</p>
+    <div id="box">
+        <form>
+            <p class="sign">아이디</p>
+            <input type="text" class="input">
+            <br>
+            <p class="sign">비밀번호</p>
+            <input type="text" class="input">
+            <br>
+            <p class="sign">이름</p>
+            <input type="text" class="input">
+            <br>
+            <p class="sign">생년월일</p>
+            <select name="년도" class="select">
+                <option value="년도">년도</option>
+            </select>
+            <select name="월" class="select">
+                <option value="월">월</option>
+            </select>
+            <select name="일" class="select">
+                <option value="일">일</option>
+            </select>
+            <br>
+            <p class="sign">성별</p>
+            <input type="radio" id="man">
+            <label for="man" class="gender">남자</label>
+            <input type="radio" id="woman">
+            <label for="woman" class="gender">여자</label>
+            <br>
+            <p class="sign">이메일</p>
+            <input type="text" class="input" placeholder="이메일 주소에 '@'를 포함해주세요.">
+            <br>
+            <p class="sign">휴대전화</p>
+            <input type="text" class="number" placeholder="숫자만 입력해주세요.">
+            <input type="submit" value="인증번호받기" class="confirm">
+            <br>
+            <input type="text" class="input" placeholder="인증번호를 입력해주세요.">
+            <br>
+            <p class="sign">취미</p>
+            <label class="check"><input type="checkbox">운동</label>
+            <label class="check"><input type="checkbox">요리</label>
+            <label class="check"><input type="checkbox">여행</label>
+            <label class="check"><input type="checkbox">게임</label>
+            <label class="check"><input type="checkbox">컴퓨터</label>
+            <label class="check"><input type="checkbox">음악</label>
+            <label class="check"><input type="checkbox">영화</label>
+            <label class="check"><input type="checkbox">독서</label>
+            <br>
+            <p class="sign">가입인사</p>
+            <input type="text" class="text-field">
+            <br>
+            <input type="submit" value="가입하기" class="finish">
+        </form>
+
+
+    </div>
+</body>
+</html>
