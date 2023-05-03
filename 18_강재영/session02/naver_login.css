@@ -1,0 +1,74 @@
+
+.big_box{
+    border: 1000px;
+    font-size: 14px;
+    font: bold;
+    color: #000;
+}
+#naver_signin{
+
+    border: 1px solid #e4e4e4;
+    background-color: #fbfbfb;
+    padding: 10px;
+}
+.signin_box{
+    
+    font-size: 14px;
+    font: bold;
+    color: #000;
+}
+input{
+    font-size: 12px;
+    color: #000;
+}
+select{
+    font-size: 12px;
+    color: #000;
+}
+#male{
+    font-size: 12px;
+    color: #000;
+}
+#female{
+    font-size: 12px;
+    color: #000;
+}
+#button1{
+    color: #fff;
+    background-color: green;
+    width: 33%;
+    height: 25px;
+}
+#button2{
+    color: #fff;
+    background-color: green;
+    width: 100%;
+    height: 25px;
+}
+#id{
+    width: 100%;
+}
+#pw{
+    width: 100%;
+}
+#name{
+    width: 100%;
+}
+#year{
+    width: 33%;
+    height: 25px;
+}
+#month{
+    width: 32%;
+    height: 25px;
+}
+#day{
+    width: 33%;
+    height: 25px;
+}
+#input_normal{
+    width: 100%;
+}
+#ph{
+    width: 65%;
+}
