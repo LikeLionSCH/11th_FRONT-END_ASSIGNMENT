@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/reset.css">
+   <title>Naver_signUp</title>
+</head>
+<body>
+
+   <div class="main-signup">
+       <header>
+           <div class="logo" style="padding: 60px 0 0 0;">
+               <a href="https://www.naver.com/" title="naver"><img src="./img/Naver_Logotype.svg" style="width: 240px; height: 40px;"></a>
+           </div>
+       </header>
+
+       <section class="signup-wrap">
+
+           <div>
+               <h3>아이디</h3>
+               <span class="signup-input">
+                   <input id="signup-id" type="text" maxlength="20"></input>
+                   <span class="signup-at">@naver.com</span>
+               </span>
+
+               <h3>비밀번호</h3>
+               <span class="signup-input">
+                   <input id="signup-pw" type="text" maxlength="20"></input>
+                   <span class="pw-lock"></span>
+               </span>
+
+               <h3>비밀번호 재확인</h3>
+               <span class="signup-input">
+                   <input id="signup-pww" type="text" maxlength="20"></input>
+                   <span class="pww-lock"></span>
+               </span>
+
+           </div>
+
+           <div style="margin-top: 35px;">
+               <h3>이름</h3>
+               <span class="signup-input" maxlength="5">
+                   <input id="signup-name" type="text"></input>
+               </span>
+
+               <h3>생년월일</h3>
+               <span style="display: flex;">
+                   <span class="signup-input-birth">
+                       <input id="signup-birth-yy" type="text" placeholder="년(4자)"></input>
+                   </span>
+                   <span class="signup-input-birth" style="margin-left: 10px;">
+                       <select id="signup-birth-mm" class="selectbox" name="month">
+                           <option value="month">월</option>
+                           <option value="01">1</option>
+                           <option value="02">2</option>
+                           <option value="03">3</option>
+                           <option value="04">4</option>
+                           <option value="05">5</option>
+                           <option value="06">6</option>
+                           <option value="07">7</option>
+                           <option value="08">8</option>
+                           <option value="09">9</option>
+                           <option value="10">10</option>
+                           <option value="11">11</option>
+                           <option value="12">12</option>
+                       </select>
+                   </span>
+                   <span class="signup-input-birth" style="margin-left: 10px;">
+                       <input id="signup-birth-dd" type="text" placeholder="일"></input>
+                   </span>
+               </span>
+
+               <h3>성별</h3>
+               <span class="signup-input">
+                   <select id="signup-gender" class="selectbox" name="gender">
+                       <option value="gender">성별</option>
+                       <option value="man">남자</option>
+                       <option value="woman">여자</option>
+                       <option value="no">선택 안함</option>
+                   </select>
+               </span>
+
+               <span class="choice">
+                   <h3>본인 확인 이메일</h3>
+                   <span>(선택)</span>
+               </span>
+               <span class="signup-input">
+                   <input id="signup-email" type="text" placeholder="선택입력"></input>
+               </span>
+
+           </div>
+
+           <div style="margin-top: 35px;">
+               <h3>휴대전화</h3>
+               <span class="signup-input" maxlength="11">
+                   <select id="signup-country" class="selectbox" name="country">
+                       <option value="ko">대한민국 +82</option>
+                   </select>
+               </span>
+               <div style="display: flex;">
+                   <span class="signup-input" style="width:100%; margin: 10px 0px 0px 0px">
+                       <input id="signup-phone" type="text" placeholder="전화번호 입력"></input>
+                   </span>
+                   <span class="cnum-btn-wrap">
+                       <button id="cnum-btn">인증번호 받기</button>
+                   </span>
+               </div>
+               
+               <span class="signup-input-c" style="margin-top: 10px;">
+                   <input id="signup-cnum" type="text" placeholder="인증번호 입력하세요"></input>
+               </span>
+           </div>
+
+           <div>
+               <div class="signup-btn-wrap">
+                   <button id="signup-btn">가입하기</button>
+               </div>
+           </div>
+       </section>
+
+       <footer>
+           <div class="copyright-wrap" style="font-size: 12px; padding: 3px 5px 8px 0;" >
+               <!-- <span>이용약관 | 개인정보처리방침 | 책임의 한계와 고지 | 회원정보 고객센터</span> -->
+               <div style="font-size: 12px;"><img src="./img/Naver_Logotype.svg" width="63px" height="12px" alt="">Copyright <em style="font-weight:bold;">NAVER Corp.</em> All Rights Reserved.</div>
+           </div>
+       </footer>
+
+   </div>
+
+</body>
+</html>
