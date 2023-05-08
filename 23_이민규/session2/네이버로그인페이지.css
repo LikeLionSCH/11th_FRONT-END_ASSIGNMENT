@@ -1,0 +1,10 @@
+#ccontainer {
+    margin: auto;
+    min-width: 460px;
+    display: block;
+}
+#join_title {
+    margin: 19px 0 8px;
+    font-size: 12px;
+    font-weight: 700;
+}

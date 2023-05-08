@@ -1,5 +1,198 @@
 <html>
-    <body>
-        <h1>Hello</h1>
+    <head>
+
+    </head>
+    <body> 
+        <b> 회원가입 </b>
+        <div id ="container" role ="main">
+            <div id = "content">
+                <div class ="join_content">
+                    <div class = "row_group">
+                        <div class = "join_row">
+                            <h3 class ="join_title">
+                                <label for ="id">아이디</label>
+                            </h3>
+                            <span class ="ps_box int_id">
+                                <input type ="text" id ="id" name ="id" class="int" title ="ID" maxlength="20">
+                            </span>
+                        </div>
+                        <div calss ="join_row">
+                            <h3 class ="join_title">
+                                <label for ="pswd1">비밀번호</label>
+                            </h3>
+                            <span calss ="ps_box int_pass" id ="pswd11"></span>
+                            <input type="password" id ="pswd1" name ="pswd1" class ="int" title="비밀번호 입력" aria-describedby="pswd111" maxlength="20">
+                            <h3 class ="join_title">
+                                <label for ="pswd1">이름</label>
+                            </h3>
+                            <span calss ="ps_box box_right_space"></span>
+                            <input type="text" id ="name" name ="name" class ="int" title="이름"maxlength="20">
+                        </div>
+                        <div class ="join_row join_birthday">
+                            <h3 class ="join_title">
+                                <label for ="yy">생년월일</label>
+                            </h3>
+                            <form>
+                                <select name="bir1" style ="float: left;" >
+                                  <option value="none">=== 선택 ===</option>
+                                  <option value="y11" selected>1990</option>
+                                  <option value="y12">1991</option>
+                                  <option value="y13">1992</option>
+                                  <option value="y14">1993</option>
+                                  <option value="y15">1994</option>
+                                  <option value="y16">1995</option>
+                                  <option value="y17">1996</option>
+                                  <option value="y18">1997</option>
+                                  <option value="y19">1998</option>
+                                  <option value="y20">1999</option>
+                                  <option value="y21">2000</option>
+                                  <option value="y22">2001</option>
+                                  <option value="y23">2002</option>
+                                  <option value="y24">2003</option>
+                                  <option value="y25">2004</option>
+                                  <option value="y26">2005</option>
+                                  <option value="y27">2006</option>
+                                  <option value="y28">2007</option>
+                                  <option value="y29">2008</option>
+                                  <option value="y30">2009</option>
+                                  <option value="y31">2010</option>
+                                  <option value="y32">2011</option>
+                                  <option value="y33">2012</option>
+                                  <option value="y34">2013</option>
+                                  <option value="y35">2014</option>
+                                  <option value="y36">2015</option>
+                                  <option value="y37">2016</option>
+                                  <option value="y38">2017</option>
+                                  <option value="y39">2018</option>
+                                  <option value="y40">2019</option>
+                                  <option value="y41">2020</option>
+                                  <option value="y42">2021</option>
+                                  <option value="y43">2022</option>
+                                  <option value="y44">2023</option>
+                                </select>
+                              </form>
+                              <form>
+                                <select name="bir2" style ="float: left;" >
+                                  <option value="none">=== 선택 ===</option>
+                                  <option value="January" selected>1</option>
+                                  <option value="February">2</option>
+                                  <option value="March">3</option>
+                                  <option value="April">4</option>
+                                  <option value="May">5</option>
+                                  <option value="June">6</option>
+                                  <option value="July">7</option>
+                                  <option value="August">8</option>
+                                  <option value="September">9</option>
+                                  <option value="October">10</option>
+                                  <option value="November">11</option>
+                                  <option value="December">12</option>
+                                </select>
+                              </form>
+                              <form>
+                                <select name="bir3" style ="float: left;" >
+                                  <option value="none">=== 선택 ===</option>
+                                  <option value="d1" selected>1</option>
+                                  <option value="d2">2</option>
+                                  <option value="d3">3</option>
+                                  <option value="d4">4</option>
+                                  <option value="d5">5</option>
+                                  <option value="d6">6</option>
+                                  <option value="d7">7</option>
+                                  <option value="d31">8</option>
+                                  <option value="d8">9</option>
+                                  <option value="d9">10</option>
+                                  <option value="d10">11</option>
+                                  <option value="d11">12</option>
+                                  <option value="d12">13</option>
+                                  <option value="d13">14</option>
+                                  <option value="d14">15</option>
+                                  <option value="d15">16</option>
+                                  <option value="d16">17</option>
+                                  <option value="d17">18</option>
+                                  <option value="d18">19</option>
+                                  <option value="d19">20</option>
+                                  <option value="d20">21</option>
+                                  <option value="d21">22</option>
+                                  <option value="d22">23</option>
+                                  <option value="d23">24</option>
+                                  <option value="d24">25</option>
+                                  <option value="d25">26</option>
+                                  <option value="d26">27</option>
+                                  <option value="d27">28</option>
+                                  <option value="d28">29</option>
+                                  <option value="d29">30</option>
+                                  <option value="d30">31</option>
+                                </select>
+                              </form><br>
+                        </div>
+                        <div class ="join_row">
+                            <h3 class ="join_title">
+                                <label for ="pswd1">성별</label>
+                            </h3>  
+                            <input type="radio" name="gender" value="man">남
+                            <input type="radio" name="gender" value="woman">여 
+                        </div>
+                        <div class ="join_row join_email">
+                            <h3 class ="join_title">
+                                <label for ="email">이메일</label>
+                            </h3>
+                            <span class ="ps_bow int_email box_right_space">
+                                <input type ="text" id ="email" name ="email" placeholder="선택입력" class ="int" maxlength="200">
+                            </span>
+                        </div>
+                        <div class ="join_row join_mobile" id ="mobDiv">
+                            <h3 class ="join_title">
+                                <label for ="phoneNo">휴대전화</label>
+                            </h3>
+                            <div class ="int_mobile_area">
+                                <span class ="ps_box int_mobile" >
+                                    <input type="tel" id="phoneNo" name="phoneNo" placeholder="전화번호 입력" aria-label="전화번호 입력" class="int" maxlength="16">
+                                    <label for ="phoneNo" class="1b1"></label>
+                                </span>
+                                <a href="#" class="btn_veritify btn_primary" id="btnSend" role="button">
+                                    <span class>인증번호받기</span>
+                                </a>    
+                            </div>
+                            <div class="ps_box_disable box_right_space" id="autoNoBow" >
+                                <input type="tel" id="autoNo" name="autoNo" placeholder="인증번호 입력하세요." aria-label="인증번호를 입력하세요." aria-describedby="wa_verify" class="int" disabled maxlength="4">
+                                <label id ="wa_verify" for="autoNo" class="1b1">
+                                    <span class="wa_blind">인증받은 후 인증번호를 입력해야 합니다.</span>
+                                    <span class="input_code" id="autoNoCode" style="display:none"></span>
+                                </label>
+                            </div>
+                            <div class ="join_row">
+                                <h3 class ="join_title">
+                                    <label for ="hobby">취미</label>
+                                </h3> 
+                                <label><input type="checkbox" name="hobby" value="gym">운동</label>
+                                <label><input type="checkbox" name="hobby" value="cook">요리</label>
+                                <label><input type="checkbox" name="hobby" value="travel">여행</label>
+                                <label><input type="checkbox" name="hobby" value="game">게임</label>
+                                <label><input type="checkbox" name="hobby" value="com">컴퓨터</label>
+                                <label><input type="checkbox" name="hobby" value="song">음악</label>
+                                <label><input type="checkbox" name="hobby" value="movie">영화</label>
+                                <label><input type="checkbox" name="hobby" value="read">독서</label>
+                            </div>
+                            <div class ="join_row">
+                                <h3 class ="join_title">
+                                    <label for ="hi">가입인사</label>
+
+                                </h3>
+                                <div style="border: 1px solid black; padding: 50px;"></div>
+
+                            </div>
+
+                        </div>
+                        <div class="btn_area">
+                            <button type="button" id ="btnJoin" class="btn_type btn_primary">
+                                <span>가입하기</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
