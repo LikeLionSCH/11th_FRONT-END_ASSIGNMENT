@@ -1,0 +1,14 @@
+#container { margin: auto; width: 1000px; height: 1000px; border: 1px black solid; font-weight: bold; font-size: 14px;}
+form { font-weight: bold; font-size: 14px; color: #000; border: 1 #e4e4e4 solid; background-color: #fbfbfb; padding: 20px;}
+.gender { font-weight: normal; font-size: 12px; color: #000; }
+.hobby { font-weight: normal; font-size: 12px; color: #000;}
+.hobby input { width: auto;}
+.hobby span { margin-right: 70px;}
+.certification { padding: 0; width: 19%; border: 1px #08a600; background-color: #4ec53d; font-size: 12px; color: #fff;}
+.join { border: 1px #08a600; background-color: #4ec53d; font-size: 16px; color: #fff;}
+input { width: 100%; }
+.year input { width: 30%; }
+.year ::placeholder { color: #000;}
+.gender-group input { width: auto;}
+.phone-number {width: 80%; padding: 0;}
+textarea {width: 100%;}
