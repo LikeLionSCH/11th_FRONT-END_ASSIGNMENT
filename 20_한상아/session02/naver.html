@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naver login</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <p class="name">회원가입</p>
+    <form>s
+        <div>
+            <p class="name">아이디</p>
+            <input type="text" name="id" id="input">
+        </div>
+        <div>
+            <p class="name">비밀번호</p>
+            <input type="password" name="pw" id="input">
+        </div>
+        <div>
+            <p class="name">이름</p>
+            <input type="text" name="name" id="input">
+        </div>
+        <div>
+            <p class="name">생년월일</p>
+            <select name="birthday" id="userbirth">
+                <option value="year">년도</option>
+            </select>
+            <select name="birthday" id="userbirth">
+                <option value="month">월</option>
+            </select>
+            <select name="birthday" id="userbirth">
+                <option value="day">일</option>
+            </select>
+        </div>
+        <div>
+            <p class="name">성별</p>
+            <input type="radio" id="man">
+            <label for="man" class="gender">남자</label>
+            <input type="radio" id="woman">
+            <label for="woman" class="gender">여자</label>
+        </div>
+        <div>
+            <p class="name">이메일</p>
+            <input type="text" name="email" id="input" placeholder="이메일 주소에 '@'를 포함해주세요.">
+        </div>
+        <div>
+            <p class="name">휴대전화</p>
+            <input type="text" name="phonenumber" id="userphone" placeholder="숫자만 입력해주세요.">
+            <input type="submit" value="인증번호 받기" class="button"><br>
+            <input type="text" name="num" id="input" placeholder="인증번호를 입력해주세요.">
+        </div>
+        <div>
+            <p class="name">취미</p>
+            <input type="checkbox" id="hobby1">
+            <label for="health" class="checkbox">운동</label>
+            <input type="checkbox" id="hobby">
+            <label for="cook" class="checkbox">요리</label>
+            <input type="checkbox" id="hobby">
+            <label for="travel" class="checkbox">여행</label>
+            <input type="checkbox" id="hobby">
+            <label for="game" class="checkbox">게임</label>
+            <input type="checkbox" id="hobby">
+            <label for="computer" class="checkbox">컴퓨터</label>
+            <input type="checkbox" id="hobby">
+            <label for="music" class="checkbox">음악</label>
+            <input type="checkbox" id="hobby">
+            <label for="movie" class="checkbox">영화</label>
+            <input type="checkbox" id="hobby">
+            <label for="book" class="checkbox">독서</label>
+        </div>
+        <div>
+            <p class="name">가입인사</p>
+            <textarea name="intro" id="intro" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="가입하기" class="signup">
+        </div>
+    </form>
+
+</body>
+
+</html>

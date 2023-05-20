@@ -1,0 +1,79 @@
+.name {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+
+form {
+    width: 1000px;
+    border: 1px solid #e4e4e4;
+    background-color: #fbfbfb;
+    padding: 20px;
+    padding-top: 5px;
+}
+
+#input {
+    font-size: 12px;
+    color: #000;
+    width: 97%;
+    padding: 7px;
+    margin: 0px auto;
+}
+
+#userbirth {
+    font-size: 12px;
+    color: #000;
+    width: 31%;
+    padding: 6px;
+    margin: 5px;
+}
+
+.gender {
+    font-size: 12px;
+    color: #000;
+}
+
+#userphone {
+    font-size: 12px;
+    color: #000;
+    width: 80%;
+    padding: 7px;
+    margin: 0px auto 5px;
+}
+
+.button {
+    border: 1px;
+    border-color: #08a600;
+    background-color: #4ec53d;
+    font-size: 12px;
+    color: #fff;
+    width: 16%;
+    height: 28px;
+}
+
+.checkbox {
+    font-size: 12px;
+    color: #000;
+}
+
+#hobby {
+    margin-left: 70px;
+}
+
+#intro {
+    font-size: 12px;
+    color: #000;
+    width: 98%;
+    height: 100px;
+}
+
+.signup {
+    border: 1px;
+    border-color: #08a600;
+    background-color: #4ec53d;
+    font-size: 16px;
+    color: #fff;
+    padding: 12px;
+    width: 988px;
+    margin-top: 10px;
+}
