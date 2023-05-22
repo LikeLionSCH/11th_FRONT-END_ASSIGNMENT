@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>    
+    <p class="join">회원가입</p>
+    <form class="member">        
+        <div class="field">
+            <p>아이디</p>
+            <input class="userid" type="text">
+        </div>
+        <div class="field">
+            <p>비밀번호</p>
+            <input class="userpw" type="password">
+        </div>
+        <div class="field">
+            <p>이름</p>
+            <input type="text">
+        </div>
+
+        <div class="field birth">
+            <p>생년월일</p>
+            <div class="birth">
+                <input type="number" placeholder="년도" class="year">                
+                <select>
+                    <option value="">월</option>
+                    <option value="">1월</option>
+                    <option value="">2월</option>
+                    <option value="">3월</option>
+                    <option value="">4월</option>
+                    <option value="">5월</option>
+                    <option value="">6월</option>
+                    <option value="">7월</option>
+                    <option value="">8월</option>
+                    <option value="">9월</option>
+                    <option value="">10월</option>
+                    <option value="">11월</option>
+                    <option value="">12월</option>
+                </select>
+                <input type="number" placeholder="일">
+            </div>
+        </div>
+
+        <div class="field gender">
+            <p>성별</p>
+            <div>
+                <label><input type="radio" name="gender">남자</label>
+                <label><input type="radio" name="gender">여자</label>
+            </div>
+        </div>
+
+        <div class="field">
+            <p>이메일</p>
+            <input type="email" placeholder="이메일 주소에 '@'를 포함해주세요.">
+        </div>
+        
+        <div class="field tel-number">
+            <p>휴대전화</p>
+            <div>
+                <input type="tel" placeholder="숫자만 입력해주세요.">
+                <input type="button" value="인증번호 받기">
+            </div>
+            <input type="number" placeholder="인증번호를 입력해주세요.">
+        </div>
+
+        <div class="field hobby">
+            <p>취미</p>
+            <div>
+                <label><input type="checkbox" name="hobby">운동</label>
+                <label><input type="checkbox" name="hobby">요리</label>
+                <label><input type="checkbox" name="hobby">여행</label>
+                <label><input type="checkbox" name="hobby">게임</label>
+                <label><input type="checkbox" name="hobby">컴퓨터</label>
+                <label><input type="checkbox" name="hobby">음악</label>
+                <label><input type="checkbox" name="hobby">영화</label>
+                <label><input type="checkbox" name="hobby">독서</label>
+            </div>
+        </div>
+
+        <div class="intro">
+            <p>가입인사</p>
+            <textarea cols=145 rows="8"></textarea>
+        </div>
+
+        <input type="submit" value="가입하기">
+    </form>
+
+</body>
+</html>
