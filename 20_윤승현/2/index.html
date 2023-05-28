@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>유저 정보 수정</title>
+  <style>
+    input, button {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>유저 정보 수정</h1>
+  <input type="text" id="usernameInput" placeholder="username 변경">
+  <input type="text" id="emailInput" placeholder="email 변경">
+  <button onclick="updateUserInfo()">유저 정보 업데이트</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    function updateUserInfo() {
+      var userId = Math.floor(Math.random() * 10) + 1; 
+      var username = document.getElementById("usernameInput").value;
+      var email = document.getElementById("emailInput").value;
+
+      axios.put('https://jsonplaceholder.typicode.com/users/' + userId, {
+        username: username,
+        email: email
+      })
+      .then(function(response) {
+        console.log(response.data);
+        alert('유저 정보 업데이트');
+      })
+      .catch(function(error) {
+        console.log(error);
+        alert('유저 정보 업데이트 실패');
+      });
+    }
+  </script>
+</body>
+</html>
