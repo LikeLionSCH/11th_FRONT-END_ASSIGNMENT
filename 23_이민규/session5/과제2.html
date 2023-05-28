@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Axios & Fetch Test</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <script>
+    // Axios 예시
+    // GET 요청
+    axios.get('http://localhost:3000/user')
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+
+    // POST 요청
+    axios.post('http://localhost:3000/user', {
+      userName: 'Cocoon',
+      userId: 'col134'
+    })
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+
+    // PUT 요청
+    axios.put('http://localhost:3000/user/1', {
+      userName: 'New Name',
+      userId: 'newId'
+    })
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+
+    // DELETE 요청
+    axios.delete('http://localhost:3000/user/1')
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+
+    // Fetch 예시
+    // Fetch를 사용해 http://localhost:3000/user/post에 metho 요청
+    // header는 Content-Type을 application/json으로 설정
+    // 요청 데이터로 id오 description을 JSON 형식으로 전달
+    // GET 요청
+    fetch('http://localhost:3000/user')
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+
+    // POST 요청
+    fetch('http://localhost:3000/user', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        userName: 'Cocoon',
+        userId: 'col134'
+      })
+    })
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+
+    // PUT 요청
+    fetch('http://localhost:3000/user/1', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        userName: 'New Name',
+        userId: 'newId'
+      })
+    })
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+
+    // DELETE 요청
+    fetch('http://localhost:3000/user/1', {
+      method: 'DELETE'
+    })
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+  </script>
+</body>
+</html>

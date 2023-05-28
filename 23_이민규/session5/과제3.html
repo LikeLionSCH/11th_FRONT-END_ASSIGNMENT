@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>과제3번</title>
+</head>
+<body>
+  <h1>힘들어요</h1>
+
+  <div>
+    <label for="username">이름을 말해라</label>
+    <input type="text" id="username" />
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input type="text" id="email" />
+  </div>
+
+  <button onclick="Usernamemail()">Click Me</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    function Usernamemail() {
+      
+      const userId = Math.floor(Math.random() * 10) + 1;
+
+      
+      const username = document.Uname('username').value;
+      const email = document.Uname('email').value;
+
+      const data = {
+        username: username,
+        email: email
+      };
+
+      
+      axios.put(`https://jsonplaceholder.typicode.com/users/${userId}`, data)
+        .then(response => {
+          console.log(response.data);
+          alert('바뀌었습니다.');
+        })
+        .catch(error => {
+          console.error(error);
+          alert('오류 발생');
+        });
+    }
+  </script>
+</body>
+</html>
