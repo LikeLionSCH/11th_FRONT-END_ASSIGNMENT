@@ -11,6 +11,5 @@
         document.getElementById("colorValue").textContent = color;
       }
   
-      // 버튼 클릭 시 함수 호출
       document.getElementById("colorButton").addEventListener("click", changeBackgroundColor);
   
