@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- axios -->
+    <!-- GET -->
+    <input type="button" value="GET" onclick=" 
+        axios.get('https://jsonplaceholder.typicode.com/users/') // 해당 url에서
+            .then(function(response) {  // 응답이 성공하면
+                console.log(response);  // console창에 데이터 값을 출력한다
+            })
+            .catch(function(error) {
+                console.log(error);
+            });
+
+    ">
+
+    <!-- POST -->
+    <input type="button" value="POST" onclick="
+        axios.post('https://jsonplaceholder.typicode.com/users/1', [ // 해당 url의 id(=url 마지막에 있는 숫자)에
+            {userName: 'aaa', userId: '1'}, // 아래 3개 객체의 값들을 POST 한다
+            {userName: 'bbb', userId: '2'}, 
+            {userName: 'ccc', userId: '3'},     
+        ])
+        .then(function(response) {
+                console.log(response);
+            })
+        .catch(function(error) {
+                console.log(error);
+            });
+
+        ">
+
+    <!-- PUT -->
+    <input type="button" value="PUT" onclick="
+        axios.put('https://jsonplaceholder.typicode.com/users/2', { // 해당 url의 id(=url 마지막에 있는 숫자)에
+            userName: 'LEEMINKYU', // 객체 정보를 PUT 한다
+            userId: '2',
+        })
+        .then(function(response) {
+                console.log(response);
+            })
+        .catch(function(error) {
+                console.log(error);
+            });
+
+        ">
+
+
+    <!-- DELETE -->
+    <input type="button" value="DELETE" onclick="
+            axios.delete('https://jsonplaceholder.typicode.com/users/1') // 해당 url의 id(=url 마지막에 있는 숫자)에 데이터를 삭제한다
+                .then(function(response) {
+                    console.log(response);
+                })
+                .catch(function(error) {
+                    console.log(error);
+                });
+
+        ">
+    <!-- end of axios -->
+    <br />
+
+
+    <!-- fetch -->
+    <input type="button" value="GET2" onclick="
+        fetch('https://jsonplaceholder.typicode.com/users/', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json' // 컨텐츠 타입은 json으로 설정
+        }
+        })
+        .then(response => response.json()) // 데이터 json 형태로 바꾸기
+        .then(data => {
+            console.log(data); // 응답 성공 시 console창에 데이터 출력
+        })
+        .catch(error => {
+            console.log(error);
+        });
+
+
+            ">
+
+    <input type="button" value="POST2" onclick="
+        fetch('https://jsonplaceholder.typicode.com/users/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify([ // 전달할 데이터 값(json형태로 변환하여 데이터를 전달한다)
+            {userName: 'a', userId: 'a1',},
+            {userName: 'bb', userId: 'b2',},
+            {userName: 'ccc', userId: 'c3',},
+            ])
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.log(error);
+        });
+
+">
+
+    <input type="button" value="PUT2" onclick="
+        fetch('https://jsonplaceholder.typicode.com/users/1', {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify([
+            {userName: 'a', userId: 'a1',},
+            {userName: 'bb', userId: 'b2',},
+            {userName: 'ccc', userId: 'c3',},
+            ])
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.log(error);
+        });
+
+">
+
+    <input type="button" value="DELETE2" onclick="
+        fetch('https://jsonplaceholder.typicode.com/users/1', {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.log(error);
+        });
+">
+
+</body>
+
+</html>
