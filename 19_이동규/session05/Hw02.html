@@ -13,7 +13,7 @@
 
     <!-- axios -->
     <!-- GET -->
-    <input type="button" value="GET" onclick=" 
+    <input type="button" value="GET" onclick="
         axios.get('https://jsonplaceholder.typicode.com/users/') // 해당 url에서
             .then(function(response) {  // 응답이 성공하면
                 console.log(response);  // console창에 데이터 값을 출력한다
@@ -28,8 +28,8 @@
     <input type="button" value="POST" onclick="
         axios.post('https://jsonplaceholder.typicode.com/users/1', [ // 해당 url의 id(=url 마지막에 있는 숫자)에
             {userName: 'aaa', userId: '1'}, // 아래 3개 객체의 값들을 POST 한다
-            {userName: 'bbb', userId: '2'}, 
-            {userName: 'ccc', userId: '3'},     
+            {userName: 'bbb', userId: '2'},
+            {userName: 'ccc', userId: '3'},
         ])
         .then(function(response) {
                 console.log(response);
