@@ -14,7 +14,7 @@
     <input type="email" id="email" placeholder="새로운 이메일">
     <button onclick="updateUser()">유저 업데이트</button>
     <!-- end of 변경할 Username&UserEmail 기입하는 text input 박스와 업데이트 버튼 -->
-    
+
     <!-- 기존 유저 정보와 변경된 유저 정보가 들어갈 div -->
     <div id="userData">
         <h3>기존 유저 정보</h3>
@@ -42,13 +42,13 @@
 
             /* id 속성이 'oldUsername'인 요소를 찾아 변수 oldUsernameElement에 할당한다.
             이후 oldUsernameElement로 요소 조작 및 데이터 설정이 가능하다*/
-            var oldUsernameElement = document.getElementById('oldUsername'); 
+            var oldUsernameElement = document.getElementById('oldUsername');
             var oldEmailElement = document.getElementById('oldEmail');
 
-            // 기존 유저 정보에 들어갈 값 초기화 
-            oldUsernameElement.textContent = '';   
+            // 기존 유저 정보에 들어갈 값 초기화
+            oldUsernameElement.textContent = '';
             oldEmailElement.textContent = '';
-            
+
             // 기존 유저 정보 가져오기
             axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`)
             .then(function (response) {
@@ -67,7 +67,7 @@
 
                     // 변경된 유저 정보 표시
                     var newUsernameElement = document.getElementById('newUsername');
-                    var newEmailElement = document.getElementById('newEmail'); 
+                    var newEmailElement = document.getElementById('newEmail');
                     newUsernameElement.textContent = newUsername;   // 변경된 유저 정보 나타내기
                     newEmailElement.textContent = newEmail;     // 변경된 유저 정보 나타내기
                 })
