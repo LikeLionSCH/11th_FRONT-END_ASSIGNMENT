@@ -1,14 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Update User</title>
 </head>
+
 <body>
-    
-    <script src="Hw03.js"></script>
+    <!-- 변경할 Username&UserEmail 기입하는 text input 박스와 업데이트 버튼 -->
+    <input type="text" id="username" placeholder="새로운 유저 이름">
+    <input type="email" id="email" placeholder="새로운 이메일">
+    <button onclick="updateUser()">유저 업데이트</button>
+    <!-- end of 변경할 Username&UserEmail 기입하는 text input 박스와 업데이트 버튼 -->
+
+    <!-- 기존 유저 정보와 변경된 유저 정보가 들어갈 div -->
+    <div id="userData">
+        <h3>기존 유저 정보</h3>
+        <p>이름: <span id="oldUsername"></span></p>
+        <p>이메일: <span id="oldEmail"></span></p>
+        <h3>변경된 유저 정보</h3>
+        <p>이름: <span id="newUsername"></span></p>
+        <p>이메일: <span id="newEmail"></span></p>
+    </div>
+    <!-- end of 기존 유저 정보와 변경된 유저 정보가 들어갈 div -->
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        // updatebutton function(유저 업데이트 버튼 클릭 시 작동 할 함수)
+        function updateUser() {
+            var userId = Math.floor(Math.random() * 10) + 1; // 1부터 10까지 임의의 유저 선택
+            var newUsername = document.getElementById('username').value; // 입력된 새로운 유저 이름을 변수에 저장
+            var newEmail = document.getElementById('email').value; // 입력된 새로운 유저 이메일을 변수에 저장
+
+            // axios put 메소드 사용시 전달해줄 유저 객체(이름&이메일)
+            var userUpdateData = {
+                username: newUsername,  // 입력된 새로운 유저 정보
+                email: newEmail     // 입력된 새로운 유저 정보
+            };
+
+            /* id 속성이 'oldUsername'인 요소를 찾아 변수 oldUsernameElement에 할당한다.
+            이후 oldUsernameElement로 요소 조작 및 데이터 설정이 가능하다*/
+            var oldUsernameElement = document.getElementById('oldUsername');
+            var oldEmailElement = document.getElementById('oldEmail');
+
+            // 기존 유저 정보에 들어갈 값 초기화
+            oldUsernameElement.textContent = '';
+            oldEmailElement.textContent = '';
+
+            // 기존 유저 정보 가져오기
+            axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`)
+            .then(function (response) {
+                var user = response.data;  // 가져온 데이터 user 변수에 저장
+                oldUsernameElement.textContent = user.username; // 기존 유저 정보에 가져온 데이터 나타내기
+                oldEmailElement.textContent = user.email; // 기존 유저 정보에 가져온 데이터 나타내기
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+            // 입력 받은 정보로 변경하기
+            axios.put(`https://jsonplaceholder.typicode.com/users/${userId}`, userUpdateData)
+                .then(function (response) {
+                    console.log(response.data);
+
+                    // 변경된 유저 정보 표시
+                    var newUsernameElement = document.getElementById('newUsername');
+                    var newEmailElement = document.getElementById('newEmail');
+                    newUsernameElement.textContent = newUsername;   // 변경된 유저 정보 나타내기
+                    newEmailElement.textContent = newEmail;     // 변경된 유저 정보 나타내기
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+            }
+            // end of updatebutton function(유저 업데이트 버튼 클릭 시 작동 할 함수)
+        </script>
 </body>
+
 </html>
