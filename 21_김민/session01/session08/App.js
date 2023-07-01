@@ -1,14 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import styled from "styled-components";
 import React, { useState } from 'react';
-import { Component } from 'react';
 
 
-function App() {
+function InputSample() {  
 
-  let [text, setText] = useState("")
-  let [email, setEmail] = useState("")
-  let [password, setPassword] = useState("")
+  const [text, setText] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   let submitHandler = (e) => {
     e.preventDefault()
@@ -26,30 +26,63 @@ function App() {
     setPassword(e.target.value);
   }
 
+
+  const onChange = (e) => {
+    setText(e.target.value);
+  };
+
+  const onReset = () => {
+    setText('');
+  };
+
   return (
-      <div className='input'>
-          <h1>멋사</h1>
+    <div>
+    
+    <form>
+            <p>
+              <label htmlFor="text">id </label>
+              <input id='text' 
+              type="text" 
+              value={text} 
+              onChange={onChangeText} 
+              placeholder="--- no use ---" 
+              disabled/>
+            </p>
+            
+            <p>
+              <label htmlFor="Email">Email </label>
+              <input id='Email' 
+              type="email" 
+              value={email} 
+              onChange={onChangeEmail}/>
+            </p>
 
-          <form className='text'>
-            <label htmlFor="text">Text </label>
-            <input id='text' type="text" value={text} onChange={onChangeText} placeholder="--- no use ---" disabled/>
-          </form>
-          
-          <form className='Email'>
-            <label htmlFor="Email">Email </label>
-            <input id='Email' type="email" value={email} onChange={onChangeEmail}/>
+            <p>
+              <label htmlFor="password">Pw </label>
+              <input id='password' 
+              type="password" 
+              value={password} 
+              onChange={onChangePw}/>
+            </p>
           </form>
 
-          <form className='pw'>
-            <label htmlFor="Email">Pw </label>
-            <input id='Email' type="password" value={password} onChange={onChangePw}/>
-          </form>
           <button className="B" onClick={submitHandler}>login</button>
 
-
-      </div>
+    </div>
   )
 }
 
+
+function App() {
+  
+
+
+  return (
+    <div className="App">
+      <h1>멋사</h1>
+      <InputSample />
+    </div>
+  );
+}
 
 export default App;
