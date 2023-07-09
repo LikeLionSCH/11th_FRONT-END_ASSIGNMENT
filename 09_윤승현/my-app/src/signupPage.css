@@ -1,0 +1,143 @@
+#wrap {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+ }
+ 
+ #mainSignUp {
+   width: 100%;
+   position: relative;
+   padding: 50px 0 100px 0;
+ }
+ 
+ #mainSignUp .container {
+   width: 100%;
+   max-width: 640px;
+   margin: 0 auto;
+ }
+ 
+ #mainSignUp .container .title {
+   width: 100%;
+   position: relative;
+   text-align: center;
+   border-bottom: 2px solid #222;
+   padding: 0 0 80px 0;
+ }
+ 
+ #mainSignUp .container .title h2 {
+   font-size: 28px;
+   font-weight: 600;
+   color: #333;
+ }
+ 
+ #mainSignUp .container .title span {
+   position: absolute;
+   font-size: 12px;
+   color: #666;
+   right: 0;
+   bottom: 15px;
+   line-height: 17px;
+ }
+ 
+ #mainSignUp .container .content {
+   width: 100%;
+ }
+ 
+ #mainSignUp .container .content form ul {
+   width: 100%;
+ }
+ 
+ #mainSignUp .container .content form ul > li {
+   width: 100%;
+   position: relative;
+   padding: 10px 20px;
+ }
+ 
+ #mainSignUp .container .content form ul > li.button-box {
+   padding-top: 40px;
+   text-align: center;
+ }
+ 
+ #mainSignUp .container .content form ul > li.button-box button {
+   width: 240px;
+   height: 56px;
+   text-align: center;
+   font-size: 14px;
+   font-weight: 600;
+   color: #fff;
+   background: #5f0080;
+   cursor: pointer;
+   border: none;
+   border-radius: 4px;
+   display: block;
+   margin: 0 auto;
+ }
+ 
+ #mainSignUp .container .content form ul > li.button-box button:hover {
+   background: #4c0066;
+ }
+ 
+ #mainSignUp .container .content form ul > li div {
+   position: relative;
+   width: 100%;
+   height: 45px;
+   padding: 0 133.5px;
+ }
+ 
+ #mainSignUp .container .content form ul > li div em {
+   position: absolute;
+   height: 100%;
+   font-size: 14px;
+   font-weight: 500;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   top: 0;
+   left: 0;
+ }
+ 
+ #mainSignUp .container .content form ul > li div em i {
+   color: #fff;
+ }
+ 
+ #mainSignUp .container .content form ul > li div > input[type="text"],
+ #mainSignUp .container .content form ul > li div > input[type="password"] {
+   width: 100%;
+   height: 45px;
+   font-size: 15px;
+   background: #fff;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   padding: 0 15px;
+ }
+ 
+ .container .content form ul > li:nth-child(5) {
+   text-align: center;
+ }
+ 
+ .container .content form ul > li:nth-child(5) button {
+   width: 100%;
+   max-width: 320px;
+   margin: 0 auto;
+   display: block;
+   background-color: #5f0080;
+   color: #fff;
+   font-size: 16px;
+   font-weight: 600;
+   height: 48px;
+   line-height: 48px;
+   border-radius: 4px;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ .container .content form ul > li:nth-child(5) button:hover {
+   background-color: #4c0066;
+ }
+ 
+ .container .content form ul > li:nth-child(5) button:focus {
+   outline: none;
+ }
+ 
