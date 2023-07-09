@@ -56,7 +56,7 @@ function Login() {
         console.log("아이디:", username);
         console.log("비밀번호:", password);
         console.log("이메일:", email);
-        console.log("======================");
+        console.log("=======================");
         resetemail();
         resetpassword();
         resetusername();
